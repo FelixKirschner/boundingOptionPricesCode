@@ -111,7 +111,7 @@ function compBounds(K,level, silent, strikes, prices,w)
         for i = 1:length(identifier)
             if identifier[i][2] == 2
                 push!(relSet, i)
-            elseif identifier[i][2] == 0 && payoff(identifier[i][1][1]) > 0.0001 #not split and lower left greater zero
+            elseif identifier[i][2] == 0 && payoff(identifier[i][1][1]) > 0 #not split and lower left greater zero
                 push!(relSet, i)
             end
         end

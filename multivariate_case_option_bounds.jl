@@ -309,6 +309,16 @@ end
 #Example strikes and prices
 ##
 
+strikes = [ 100 110;
+            102 107]
+
+prices = [ 12 3;
+           10 6]
+
+weights = [1/2 1/2]
+
+##
+
 strikes = [ 95 100 110;
             96 102 107]
 
@@ -320,10 +330,10 @@ weights = [1/2 1/2]
 ## Currency basket option
 
 strikes = [ 135.5 138.5 ; #GBP/USD
-            135.5 138.5 ] #EUR/USD
+            116 119 ] #EUR/USD
 
 prices = [  2.77 1.17;
-            2.77 1.17]
+            2.21 0.67]
 
 weights = [2/3 1/3]
 
@@ -337,5 +347,5 @@ weights = [1]
 
 ##
 
-compBounds(105, 2,true, strikes, prices, weights)
+compBounds(106, 1,true, strikes, prices, weights)
 println("\n \n \n ")
